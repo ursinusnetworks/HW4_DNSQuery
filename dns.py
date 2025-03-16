@@ -18,6 +18,13 @@ class DNSHeader:
     R_NAME_ERROR = 3
     R_NOT_IMPLEMENTED = 4
     R_REFUSED = 5
+
+    TYPE_A = 1
+    TYPE_NS = 2
+    TYPE_MX = 15
+    TYPE_AAAA = 28
+
+    QCLASS_IN = 1
     
     def __init__(self):
         self.ID = 0
