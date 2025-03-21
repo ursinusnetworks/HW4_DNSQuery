@@ -62,7 +62,7 @@ if __name__ == '__main__':
     parser.add_argument("--host", type=str, required=True, help="Host whose IP you want to resolve")
     parser.add_argument("--dns_server", type=str, default="8.8.8.8", help="Path to DNS server")
     parser.add_argument("--save_path", type=str, default="out.html", help="Path to which to save index page at this host")
-    parser.add_argument("--recursive", type=bool, default=True, help="If True, do a recursive query, which will return the IP address right away.  If False, do an iterative query")
+    parser.add_argument('--recursive', default=True, action=argparse.BooleanOptionalAction, help="If True, do a recursive query, which will return the IP address right away. If False, do an iterative query")
     opt = parser.parse_args()
     host = opt.host
     dns_server = opt.dns_server
