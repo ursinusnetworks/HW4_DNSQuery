@@ -21,7 +21,7 @@ class DNSHeader:
 
     TYPE_A = 1
     TYPE_NS = 2
-    TYPE_CNAME = 4
+    TYPE_CNAME = 5
     TYPE_MX = 15
     TYPE_AAAA = 28
 
